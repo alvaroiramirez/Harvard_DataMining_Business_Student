@@ -1,6 +1,22 @@
-english
-english
-spanish
-french
-english
-german
+Scenario
+You are part of a business intelligence team at okcupid.com. The team has been asked to make an in-depth exploratory analysis of site users. The marketing team must use the two CSV files provided for this analysis, which aims to create micro-segments and personas for future campaigns. Remember, data correlations may not be beneficial in a marketing context. For example, identifying five users with specific attributes may be interesting, but it is hardly a segment worth attracting. 
+You are asked to examine the data, clean it, use supplemental data to enrich the data, and then identify four or more interesting insights from the user data.  All relevant cleaning, enriching, and EDA steps, along with the four insightful data nuances, should be organized into a presentation.  You will present to the head of marketing who is looking for an “ah–ha” persona or previously unknown data relationship between two or more interactions.   As the head of marketing, relevant information is consumed visually instead of in table form.  Thus, your presentation should include visualizations when appropriate.  You will need to turn in code and PowerPoint slides.
+
+Data
+There are two .csv files stored under the ‘data’ folder under the default folder ("/Users/alvaroramirez/Library/CloudStorage/OneDrive-Personal/estudio/Harvard/Classes/CSCI E-96/CSCI E-96/Cases/Fall/I Ok Cupid"): profiles.csv and LatLon.csv. Let’s see some data samples.
+1.	Profiles: profiles.csv has information on OKcupid.com’s site users. This is a sample of the 59946 records.
+"age","body_type","diet","drinks","drugs","education","ethnicity","height","income","job","last_online","location","offspring","orientation","pets","religion","sex","sign","smokes","speaks","status","essay0"
+22,"a little extra","strictly anything","socially","never","working on college/university","asian, white",75,NA,"transportation",2012-06-28 20:30:00,"south san francisco, california","doesn't have kids, but might want them","straight","likes dogs and likes cats","agnosticism and very serious about it","m","gemini","sometimes","english","single","about me:    i would love to think that i was some some kind of intellectual: either the dumbest smart guy, or the smartest dumb guy. can't "
+35,"average","mostly other","often","sometimes","working on space camp","white",70,80000,"hospitality / travel",2012-06-29 21:41:00,"oakland, california","doesn't have kids, but might want them","straight","likes dogs and likes cats","agnosticism but not too serious about it","m","cancer","no","english (fluently), spanish (poorly), french (poorly)","single","i am a chef: this is what that means.  1. i am a workaholic.  2. i love to cook regardless of whether i am at work.  3. i love to drink and "
+
+2.	LatLon.csv: This table lists locations. The “location” column links locations to site users. This is a sample of the 199 records.
+"location","lat","lon"
+"south san francisco, california",37.6560707092285,-122.414199829102
+"oakland, california",37.8050804138184,-122.273071289062
+
+Criteria for Success
+Organization – Was the presentation well organized? 
+Delivery – Was the content delivered clearly and persuasively with the audience in mind? 
+Code Documentation – Was the data mined to support the conclusion? 
+Written Supplemental – Is the information clear and supported in narration and code? Did the information satisfy the case problem? Were external and trustworthy sources used?
+Data Mining & Modeling Process – Overall, as a complete portfolio of work, is the topic interesting, organized, researched, supported and delivered effectively? Was CRISP-DM, SEMMA, or a similar workflow followed to organize the work? 
