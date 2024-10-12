@@ -62,6 +62,8 @@ preds2      <- predict(fit2, trainSet)
 # Examine predictions since this is one of the first times we did predict() & compare to the actual values
 data.frame(predicted = head(preds1),actual = head(trainSet$realValue))
 
+# Go to PPTX for explanation of MAPE and RMSE
+
 # Get sum of squared errors manually for "heuristic model" 
 manualErr <- (trainSet$realValue - manualPreds)^2
 sqrt(mean(manualErr))
@@ -92,5 +94,10 @@ preds2Test      <- predict(fit2, testSet)
 RMSE(y_pred = manualPredsTest, y_true = testSet$realValue)
 RMSE(y_pred = preds1Test, y_true = testSet$realValue)
 RMSE(y_pred = preds2Test, y_true = testSet$realValue)
+
+# MAPE for each "model"
+MAPE(y_pred = manualPredsTest, y_true = testSet$realValue)
+MAPE(y_pred = preds1Test, y_true = testSet$realValue)
+MAPE(y_pred = preds2Test, y_true = testSet$realValue)
 
 # End
