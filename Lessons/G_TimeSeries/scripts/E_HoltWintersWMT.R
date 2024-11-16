@@ -15,12 +15,13 @@ library(ggplot2)
 library(MLmetrics)
 
 # Data
-wmt <- read.csv('https://raw.githubusercontent.com/kwartler/Harvard_DataMining_Business_Student/master/Lessons/G_TimeSeries/data/WMT_Qtr_Rev.csv')
+wmt <- read.csv('https://raw.githubusercontent.com/kwartler/Harvard_DataMining_Business_Student/refs/heads/master/Lessons/G_TimeSeries/data/WMT_Qtr_Rev.csv')
 
 # Time formatting
 wmt$date <- as.POSIXct(wmt$unixTime, origin = '1970-1-1')
 
 head(wmt)
+tail(wmt)
 
 # Change to a time series
 stYr  <- year(wmt$date[1])
@@ -35,7 +36,7 @@ plot(qtrTS)
 # Apply HW
 # use hw() from forecast package to get prediction intervals, HoltWinters() is from stats package
 # Book Authors use ets from forecast with model='MAA'
-qtrHW <- HoltWinters(qtrTS, seasonal = "mult") #has a built in alpha optimizer
+qtrHW <- HoltWinters(qtrTS, seasonal = "multiplicative") #has a built in alpha optimizer
 
 # Example
 plot(qtrHW)
